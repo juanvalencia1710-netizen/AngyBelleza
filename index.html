@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Mi Tienda de Belleza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- ANUNCIO DE DESCUENTO -->
+    <div class="announcement-bar">
+        🎉 ¡Regístrate ahora y obtén un <span>10% de descuento</span> en tu primera compra! 💖
+    </div>
+
+    <!-- CARRUSEL DE FONDO -->
+    <div class="carrusel-fondo">
+        <div class="slide"
+            style="background-image: url('https://i.pinimg.com/1200x/a1/a5/24/a1a52471db1666dfd3e7133151ee70cc.jpg');">
+        </div>
+        <div class="slide"
+            style="background-image: url('https://i.pinimg.com/1200x/36/5a/69/365a697c00f6f56b26af0dbcbe00f395.jpg');">
+        </div>
+        <div class="slide"
+            style="background-image: url('https://i.pinimg.com/736x/82/44/e6/8244e6b8507a79b15ea374e04ecae451.jpg');">
+        </div>
+        <div class="slide"
+            style="background-image: url('https://i.pinimg.com/1200x/a6/34/da/a634da47e56a322ef86907704abbb13c.jpg');">
+        </div>
+    </div>
+
+    <header>
+
+        <nav>
+            <div class="logo">✨ Mi Tienda</div>
+
+            <div class="hamburguesa" id="hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#maquillaje">Maquillaje</a></li>
+                <li><a href="#skincare">Skincare</a></li>
+                <li><a href="#perfumes">Perfumes</a></li>
+                <li><a href="#" id="btnAbrirPortalNav">Portal</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <a href="#" id="btnCarrito">🛒 Carrito (<span id="contador">0</span>)</a>
+                    <div id="carritoDropdown">
+                        <h3>🛍️ Mi Carrito</h3>
+                        <p>Total: <span id="total">0</span> COP</p>
+                        <button id="vaciarCarrito">Vaciar Carrito</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>💅🏻 Bienvenidos a Mi Tienda de Belleza</h1>
+            <p>💄 Maquillaje, ✨ Skincare y 🌺 Perfumes todo en un solo lugar.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="#maquillaje" class="btn">Ver Productos ✨</a>
+                <button class="btn" id="btnDomicilio" style="background-color: #00ced1; border-color: #00ced1;">Hacer
+                    Domicilio 🛵</button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN MAQUILLAJE -->
+        <section id="maquillaje" class="productos">
+            <h2>💄 Maquillaje</h2>
+            <div class="contenedor-productos">
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/98/96/d7/9896d7f97e7d62a67ae2de973b6089d5.jpg"
+                        alt="Base de Maquillaje">
+                    <h3>Base de Maquillaje</h3>
+                    <p>Precio: $25.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/98/96/d7/9896d7f97e7d62a67ae2de973b6089d5.jpg"
+                        alt="Labial Rojo">
+                    <h3>Labial Rojo</h3>
+                    <p>Precio: $15.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <!-- Productos Existentes -->
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/6b/df/e8/6bdfe8e5344cfd7c7c95240784c5b534.jpg"
+                        alt="Sombra de Ojos">
+                    <h3>Sombra de Ojos</h3>
+                    <p>Precio: $20.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/30/fa/5e/30fa5e6893273551bd219e257840b914.jpg" alt="Rímel">
+                    <h3>Rímel</h3>
+                    <p>Precio: $18.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/6a/84/55/6a84558b022aa89def4ff38660acfc85.jpg" alt="Iluminador">
+                    <h3>Iluminador</h3>
+                    <p>Precio: $22.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/17/07/e0/1707e0ff88585b956d6a943547080445.jpg" alt="Bronzer">
+                    <h3>Bronzer</h3>
+                    <p>Precio: $19.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/7e/75/98/7e75986ba5e5769b845560820e9f411f.jpg"
+                        alt="Delineador de Ojos">
+                    <h3>Delineador de Ojos</h3>
+                    <p>Precio: $12.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/4d/eb/57/4deb57799ad75bfbf66c07c7163b8a89.jpg" alt="Rubor">
+                    <h3>Rubor</h3>
+                    <p>Precio: $16.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/9b/b6/b1/9bb6b10f20a737f2f7278278e66113a2.jpg"
+                        alt="Spray Fijador">
+                    <h3>Spray Fijador</h3>
+                    <p>Precio: $14.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/62/05/3a/62053aedd3515ae60660138b93db3b21.jpg" alt="Corrector">
+                    <h3>Corrector</h3>
+                    <p>Precio: $17.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/20/61/8b/20618bfc5a2e23a3ca2c3c7e5468e091.jpg"
+                        alt="Máscara de Pestañas">
+                    <h3>Máscara de Pestañas</h3>
+                    <p>Precio: $21.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/78/7b/85/787b856558ebefe22eeb205c3aa0fa4a.jpg"
+                        alt="Lápiz Labial Nude">
+                    <h3>Lápiz Labial Nude</h3>
+                    <p>Precio: $13.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/43/87/ae/4387ae7bb3f07a3c8c8b653df6944a9a.jpg"
+                        alt="Encrespador de pestañas">
+                    <h3>Encrespador de Pestañas</h3>
+                    <p>Precio: $20.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/78/cd/b4/78cdb45e959f455ea7c2957e27babc55.jpg"
+                        alt="Espejo personal">
+                    <h3>Espejo personal</h3>
+                    <p>Precio: $25.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/77/a0/20/77a0207e42dd47e9740ae566f3bcea50.jpg"
+                        alt="Cartuchera para Maquillaje">
+                    <h3>Cartuchera para Maquillaje</h3>
+                    <p>Precio: $25.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/9a/d1/ea/9ad1ea3241e57eda431d2cd48a78fb58.jpg"
+                        alt="Set de Brochas">
+                    <h3>Set de Brochas</h3>
+                    <p>Precio: $45.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+
+                <!-- 10 NUEVOS PRODUCTOS MAQUILLAJE -->
+                <div class="producto">
+                    <img src="https://cf.shopee.com.br/file/7eb7d1bf80d0298053e025ac675c3c51"
+                        alt="Paleta de Sombras Neon">
+                    <h3>Paleta Neon</h3>
+                    <p>Precio: $35.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/d5/e5/56/d5e55679b58117ad485ba6d55fd97c24.jpg"
+                        alt="Gloss Brillante">
+                    <h3>Gloss Brillante</h3>
+                    <p>Precio: $12.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/58/d0/a3/58d0a3d21a2f0668f8d4467c41953080.jpg"
+                        alt="Polvo Compacto">
+                    <h3>Polvo Compacto</h3>
+                    <p>Precio: $28.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/90/07/16/9007161c1ec209a0666771c89ea16ece.jpg"
+                        alt="Primer Facial">
+                    <h3>Primer Facial</h3>
+                    <p>Precio: $30.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/3c/3b/8a/3c3b8a6cd71fbdb514581d871fb2d115.jpg"
+                        alt="Delineador Liquido">
+                    <h3>Delineador Líquido</h3>
+                    <p>Precio: $15.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/6f/d2/fa/6fd2fa9a8c45c238662dba40c4b26dff.jpg"
+                        alt="Pestañas Postizas">
+                    <h3>Pestañas Postizas</h3>
+                    <p>Precio: $10.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/39/c4/a4/39c4a4fa34139a2702e5a802fc7b8717.jpg"
+                        alt="Esponja de Maquillaje">
+                    <h3>Esponja Blender</h3>
+                    <p>Precio: $8.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/1c/7b/42/1c7b427266c5b50ec3ac8c6911fe3e51.jpg"
+                        alt="Iluminador Liquido">
+                    <h3>Iluminador Líquido</h3>
+                    <p>Precio: $24.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/d1/b2/35/d1b2353ef7f0ea3d6609305fffcf22b4.jpg"
+                        alt="Tinta de Labios">
+                    <h3>Tinta de Labios</h3>
+                    <p>Precio: $14.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/df/47/57/df4757cb54b548570dad08738b7d0de2.jpg"
+                        alt="Kit de Cejas">
+                    <h3>Kit de Cejas</h3>
+                    <p>Precio: $26.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN SKINCARE -->
+        <section id="skincare" class="productos">
+            <h2>🧴 Skincare</h2>
+            <div class="contenedor-productos">
+                <!-- Productos Existentes -->
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/96/19/f1/9619f1ffc5b9d14f7a8945cc7d0bfeda.jpg"
+                        alt="Limpiador Facial">
+                    <h3>Limpiador Facial</h3>
+                    <p>Precio: $30.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/fa/88/47/fa8847fb1b546398bab10d9c1a22156b.jpg"
+                        alt="Tónico Hidratante">
+                    <h3>Tónico Hidratante</h3>
+                    <p>Precio: $28.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/ac/a3/8d/aca38d7dbc904128908247d19befc159.jpg"
+                        alt="Crema Hidratante">
+                    <h3>Crema Hidratante</h3>
+                    <p>Precio: $35.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/67/c3/e6/67c3e6d91992af9a346ba7e88183e0c0.jpg"
+                        alt="Sérum Facial">
+                    <h3>Sérum Facial</h3>
+                    <p>Precio: $40.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/c8/cf/c3/c8cfc3842c27648efe64c717b7bbc0a6.jpg"
+                        alt="Protector Solar">
+                    <h3>Protector Solar</h3>
+                    <p>Precio: $32.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/dc/a7/3b/dca73bf5aa01a01e4444eac957fc623d.jpg"
+                        alt="Mascarilla Facial">
+                    <h3>Mascarilla Facial</h3>
+                    <p>Precio: $22.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/f9/6d/f7/f96df791da3be97e1deec604983f4875.jpg"
+                        alt="Exfoliante Facial">
+                    <h3>Exfoliante Facial</h3>
+                    <p>Precio: $25.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://imagenes.20minutos.es/uploads/imagenes/2023/06/13/cerave-crema-reparadora-contorno-de-ojos.jpeg"
+                        alt="Contorno de Ojos">
+                    <h3>Contorno de Ojos</h3>
+                    <p>Precio: $38.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/9a/d1/ea/9ad1ea3241e57eda431d2cd48a78fb58.jpg"
+                        alt="Aceite Facial">
+                    <h3>Aceite Facial</h3>
+                    <p>Precio: $45.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/45/80/6c/45806cb214e41cba1e3c353c596b7375.jpg"
+                        alt="Agua Micelar">
+                    <h3>Agua Micelar</h3>
+                    <p>Precio: $27.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/25/84/74/2584748d27448570cba3fca36f4a09df.jpg"
+                        alt="Crema de Noche">
+                    <h3>Crema de Noche</h3>
+                    <p>Precio: $36.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/b5/8d/23/b58d23375b7226167824fe9ce862884f.jpg"
+                        alt="Spray Facial Refrescante">
+                    <h3>Spray Facial Refrescante</h3>
+                    <p>Precio: $24.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/15/42/86/154286a03b4a04635c30a01e03cb7ebd.jpg" alt="Minoxidil">
+                    <h3>Minoxidil</h3>
+                    <p>Precio: $55.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/d0/a9/e4/d0a9e4d4e06ad0e9e3420b38b5972853.jpg"
+                        alt="Gel Hidratante">
+                    <h3>Gel Hidratante</h3>
+                    <p>Precio: $15.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/d2/3f/f6/d23ff6651dd3a9d38e6d17c9cf3980ef.jpg"
+                        alt="Balaca para skincare">
+                    <h3>Balaca skincare</h3>
+                    <p>Precio: $10.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/25/84/74/2584748d27448570cba3fca36f4a09df.jpg"
+                        alt="Mascarilla de Arcilla">
+                    <h3>Mascarilla de Arcilla</h3>
+                    <p>Precio: $32.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+
+                <!-- 10 NUEVOS PRODUCTOS SKINCARE -->
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/02/b8/f5/02b8f555eba00a00277e4862350fd9fd.jpg"
+                        alt="Parches de Ojos">
+                    <h3>Parches de Ojos</h3>
+                    <p>Precio: $15.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/39/82/0c/39820c9a2996f3a9fe5bf91af4c9feca.jpg"
+                        alt="Rodillo de Jade">
+                    <h3>Rodillo de Jade</h3>
+                    <p>Precio: $20.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/a5/88/89/a588897fa9852a4933d7163cb4b23784.jpg"
+                        alt="Serum Vitamina C">
+                    <h3>Serum Vitamina C</h3>
+                    <p>Precio: $42.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/85/d0/d4/85d0d459e315e2627dbccb4049a9dc9b.jpg"
+                        alt="Crema Anti-edad">
+                    <h3>Crema Anti-edad</h3>
+                    <p>Precio: $50.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/2a/39/ac/2a39ac149b403fb73aeddef07f401c50.jpg"
+                        alt="Balsamo Labial">
+                    <h3>Bálsamo Labial</h3>
+                    <p>Precio: $10.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/83/cf/11/83cf11f46bb94371fd79f369a6d7da63.jpg"
+                        alt="Jabón Artesanal">
+                    <h3>Jabón Artesanal</h3>
+                    <p>Precio: $12.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/29/02/1e/29021e74e5d207533a121ac960bcdfdb.jpg"
+                        alt="Exfoliante de Labios">
+                    <h3>Exfoliante Labios</h3>
+                    <p>Precio: $14.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/f2/8d/5c/f28d5c145ad4b9da4f43c5058176e110.jpg"
+                        alt="Crema de Manos">
+                    <h3>Crema de Manos</h3>
+                    <p>Precio: $18.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/63/71/05/637105f7f23c452f02d338608ee06cd2.jpg"
+                        alt="Aceite de Coco">
+                    <h3>Aceite de Coco</h3>
+                    <p>Precio: $25.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/5a/61/f1/5a61f1303a245aa2f9c9f603ee71588d.jpg"
+                        alt="Agua de Rosas">
+                    <h3>Agua de Rosas</h3>
+                    <p>Precio: $16.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PERFUMES -->
+        <section id="perfumes" class="productos">
+            <h2>🌸 Perfumes</h2>
+            <div class="contenedor-productos">
+                <!-- Productos Existentes -->
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/61/a0/e5/61a0e5bc933992a5ae4e6a359fe518ab.jpg"
+                        alt="Perfume Floral">
+                    <h3>Perfume Floral</h3>
+                    <p>Precio: $60.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/dd/76/a8/dd76a80824fb673aa14d2464596142e7.jpg"
+                        alt="Perfume Cítrico">
+                    <h3>Perfume Cítrico</h3>
+                    <p>Precio: $55.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/3e/f1/3f/3ef13f515274ec45c73ce0bb01c9b90e.jpg"
+                        alt="Perfume Amaderado">
+                    <h3>Perfume Amaderado</h3>
+                    <p>Precio: $70.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/58/55/08/585508cc701f88ebb2ffa3ea01cb02df.jpg"
+                        alt="Perfume Dulce">
+                    <h3>Perfume Dulce</h3>
+                    <p>Precio: $65.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/d6/35/52/d63552aa06ace60d394c8439e110811e.jpg"
+                        alt="Perfume Fresco">
+                    <h3>Perfume Fresco</h3>
+                    <p>Precio: $58.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/23/0e/73/230e73b251da23fe895a942d6f85e670.jpg"
+                        alt="Perfume Oriental">
+                    <h3>Perfume Oriental</h3>
+                    <p>Precio: $75.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/5e/8f/45/5e8f45badfe2b6c1bb49ae91add258a3.jpg"
+                        alt="Perfume Verde">
+                    <h3>Perfume Verde</h3>
+                    <p>Precio: $62.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/1a/ff/81/1aff816d73605d0b0909f6d4ca17409d.jpg"
+                        alt="Perfume Especiado">
+                    <h3>Perfume Especiado</h3>
+                    <p>Precio: $68.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/d1/26/94/d1269470e23f8a676943ac07d8149767.jpg"
+                        alt="Perfume Marino">
+                    <h3>Perfume Marino</h3>
+                    <p>Precio: $59.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://geriniperfumes.com/wp-content/uploads/2023/09/GOURMAND-PERFUME-2.jpg"
+                        alt="Perfume Gourmand">
+                    <h3>Perfume Gourmand</h3>
+                    <p>Precio: $72.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/00/4c/54/004c545189b81a1e76d6f5e6f91be9c8.jpg"
+                        alt="Perfume Floral Intenso">
+                    <h3>Perfume Floral Intenso</h3>
+                    <p>Precio: $80.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/f4/c8/cf/f4c8cfdcc6b8e6c3e049ee7078bb5d8d.jpg"
+                        alt="Perfume Frutal">
+                    <h3>Perfume Frutal</h3>
+                    <p>Precio: $64.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/53/a0/46/53a046b405f66cbeeb6603c5e468b5b1.jpg"
+                        alt="Perfume morado">
+                    <h3>Perfume Morado</h3>
+                    <p>Precio: $64.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/a9/33/40/a9334042c0224221eb1c4c915fa56522.jpg"
+                        alt="Perfume de claveles">
+                    <h3>Perfume de Claveles</h3>
+                    <p>Precio: $60.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/26/e8/31/26e831c93bcc97aa6456a53607c30327.jpg"
+                        alt="Perfume clásico">
+                    <h3>Perfume Clásico</h3>
+                    <p>Precio: $60.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/00/4c/54/004c545189b81a1e76d6f5e6f91be9c8.jpg"
+                        alt="Perfume de Noche">
+                    <h3>Midnight Elixir</h3>
+                    <p>Precio: $85.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+
+                <!-- 10 NUEVOS PRODUCTOS PERFUMES -->
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/aa/0b/d1/aa0bd1aeb90058affa3035ee32b72141.jpg"
+                        alt="Perfume Vainilla">
+                    <h3>Vainilla Intense</h3>
+                    <p>Precio: $65.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/4e/fd/10/4efd105e7644f757254ab7ab4c0861eb.jpg"
+                        alt="Perfume Rosas">
+                    <h3>Rose Garden</h3>
+                    <p>Precio: $60.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/48/70/79/4870794640fcf4da2f76f9ad93a1258e.jpg"
+                        alt="Perfume Jazmín">
+                    <h3>Jazmín Real</h3>
+                    <p>Precio: $62.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/71/3c/06/713c06d6d6cb86f0b87d0210254cd47e.jpg"
+                        alt="Perfume Coco">
+                    <h3>Coco Paradise</h3>
+                    <p>Precio: $58.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/92/52/83/9252832d69f0e951cb38ac1382ca3368.jpg"
+                        alt="Perfume Lavanda">
+                    <h3>Lavanda Fresh</h3>
+                    <p>Precio: $55.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/bc/b1/93/bcb193eff8f8a768c3b04ef4c37772c5.jpg"
+                        alt="Perfume Sandalo">
+                    <h3>Sándalo Místico</h3>
+                    <p>Precio: $75.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/7c/0c/70/7c0c705299df7254b5b4a7d8fc756b8e.jpg"
+                        alt="Perfume Almizcle">
+                    <h3>Almizcle Puro</h3>
+                    <p>Precio: $80.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/99/ef/78/99ef780e2472743aac9fe7280d927d88.jpg"
+                        alt="Perfume Frutos Rojos">
+                    <h3>Frutos Rojos</h3>
+                    <p>Precio: $64.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/736x/b6/34/1c/b6341cbd53d0d05fb7cf9a91370de558.jpg"
+                        alt="Perfume Oceano">
+                    <h3>Ocean Breeze</h3>
+                    <p>Precio: $60.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+                <div class="producto">
+                    <img src="https://i.pinimg.com/1200x/ad/13/04/ad1304953d8db9af27fcaf0891d105aa.jpg"
+                        alt="Perfume Miel">
+                    <h3>Honey Sweet</h3>
+                    <p>Precio: $68.000 COP</p>
+                    <button class="btn-agregar">Agregar al Carrito 💖</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <p>© 2025 Mi Tienda de Belleza — Todos los derechos reservados ✨</p>
+        <div class="socials">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> |
+            <a href="#" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a> |
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </footer>
+
+    <!-- MODAL DOMICILIO -->
+    <div id="modalDomicilio" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>🛵 Datos de Domicilio</h2>
+            <form id="formDomicilio">
+                <div class="form-group">
+                    <label for="ciudad">Ciudad 🏙️</label>
+                    <input type="text" id="ciudad" required placeholder="Ej: Bogotá">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección 📍</label>
+                    <input type="text" id="direccion" required placeholder="Ej: Calle 123 # 45-67">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono 📱</label>
+                    <input type="tel" id="telefono" required placeholder="Ej: 300 123 4567">
+                </div>
+                <div class="form-group">
+                    <label for="selectMetodoPagoDomicilio">Método de Pago 💳</label>
+                    <select id="selectMetodoPagoDomicilio" required>
+                        <option value="">-- Seleccionar --</option>
+                        <option value="tarjeta">💳 Tarjeta de Crédito/Débito</option>
+                        <option value="nequi">📲 Nequi</option>
+                        <option value="bancolombia">🏦 Bancolombia</option>
+                        <option value="efectivo">💵 Efectivo</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Pedir Domicilio 🛵</button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL PORTAL REGISTRO -->
+    <div id="portalRegistro" class="modal">
+        <div class="modal-content portal-content">
+            <span class="close-portal" style="float: right; cursor: pointer; font-size: 28px;">&times;</span>
+            <h2>💖 Registro de Clientes</h2>
+            <p>🎉 ¡Regístrate y obtén un <span>10% de descuento</span>!</p>
+            <form id="formRegistro">
+                <div class="form-group">
+                    <label for="reg-nombre">Nombre Completo 🌸</label>
+                    <input type="text" id="reg-nombre" name="nombre" placeholder="Tu nombre..." required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Correo Electrónico 📧</label>
+                    <input type="email" id="reg-email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Contraseña 🔒</label>
+                    <input type="password" id="reg-password" name="password" placeholder="******" required>
+                </div>
+                <button type="submit" class="btn-submit">Registrarse ✨</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL PAGO (CARRITO) -->
+    <div id="modalPago" class="modal">
+        <div class="modal-content">
+            <span class="close-pago" onclick="cerrarModalPago()">&times;</span>
+            <h2>🛍️ Finalizar Compra</h2>
+            <p>Selecciona tu método de pago preferido:</p>
+
+            <div class="form-group">
+                <label for="selectMetodoPagoCarrito">Método de Pago �</label>
+                <select id="selectMetodoPagoCarrito">
+                    <option value="">-- Seleccionar --</option>
+                    <option value="tarjeta">💳 Tarjeta de Crédito/Débito</option>
+                    <option value="nequi">📲 Nequi</option>
+                    <option value="bancolombia">🏦 Bancolombia</option>
+                    <option value="efectivo">💵 Efectivo</option>
+                </select>
+            </div>
+
+            <button id="btnPagarCarrito" class="btn">Pagar Ahora 💖</button>
+        </div>
+    </div>
+
+    <script src="Java.js"></script>
+
+
+</body>
+
+</html>
